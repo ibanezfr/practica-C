@@ -1,4 +1,4 @@
-# Prácticas de Algoritmos y Estructuras de Datos en Lenguaje C.
+# Prácticas en Lenguage C.
 
 ### Franco E. Ibañez 2024
 
