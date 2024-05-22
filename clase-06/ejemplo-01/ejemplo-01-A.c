@@ -6,14 +6,14 @@ int main() {
    float Prom;
    int i;
 
-   Total = 0.0;
-   Nota = 0.0;
-   Prom = 0.0;
+   Total = 0;
+   Nota = 0;
+   Prom = 0;
 
    for (i = 1; i <= 40; i++) {
       printf("Ingrese la nota del alumno %d > ", i);
       scanf("%f", &Nota);
-      Total += Nota;
+      Total = Total + Nota;
    }
 
    Prom = (Total / 40 * 100) / 100;
