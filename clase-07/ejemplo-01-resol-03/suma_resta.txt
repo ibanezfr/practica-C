@@ -1,6 +1,12 @@
 // Programa para sumar y restar dos números dados
 PROGRAMA suma_resta
 
+FUNCION restar (Num1:Entero, Num2:Entero):Entero
+HACER
+   restar := Num1 - Num2
+FIN HACER
+FIN FUNCION 
+
 PROCEDIMIENTO sumar_restar (REF Resul_S: Entero, REF Resul_R: Entero,
       Nro1:Entero, Nro2:Entero)
 HACER
@@ -8,12 +14,6 @@ HACER
    Resul_R := restar(Nro1 - Nro2)
 FIN HACER
 FIN PROCEDIMIENTO
-
-FUNCION restar (Num1:Entero, Num2:Entero):Entero
-HACER
-   restar := Num1 - Num2
-FIN HACER
-FIN FUNCION         
 
 VARIABLES
 RS, RR, N1, N2: Entero 2

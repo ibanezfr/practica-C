@@ -11,14 +11,18 @@ FIN PROCEDIMIENTO
 
 VARIABLES
 RS, RR, N1, N2: Entero 2
+
 HACER
   IMPRIMIR: "Ingrese el primer valor > "
   LEER: N1
   IMPRIMIR: "Ingrese el segundo valor > "
   LEER: N2
+
   sumar_restar(RS, RR, N1, N2)
+
   IMPRIMIR: "Resultado Suma --> ", RS
   IMPRIMIR: "Resultado Resta --> ", RR
+
 FIN HACER
 FIN PROGRAMA
 
