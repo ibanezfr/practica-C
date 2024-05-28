@@ -10,15 +10,15 @@ int main() {
    Nota = 0;
    Prom = 0;
 
-   for (i = 1; i <= 40; i++) {
+   for (i = 1; i <= 4; i++) {
       printf("Ingrese la nota del alumno %d > ", i);
       scanf("%f", &Nota);
       Total = Total + Nota;
    }
 
-   Prom = (Total / 40 * 100) / 100;
+   Prom = (Total / 4) ;
 
-   printf("Promedio: %.2f\n", Prom);
+   printf("Promedio: %f\n", Prom);
 
    return 0;
 }

@@ -1,0 +1,17 @@
+Se define un nombre del subprograma.
+
+Se definen parámetros, y cada parámetro tiene:
+   Un nombre, un tipo de dato, y un tipo de parámetro 
+      (por valor, por referencia)
+
+Hay dos clases de subprogramas: los procedimientos y las funciones:
+
+# Los procedimientos admiten parámetros de ambas clases, por lo que podrían
+tener varias salidas. No pueden formar parte de expresiones, su invocación se
+realiza como si fuesen una instrucción más en el lenguaje.
+
+# Las funciones sólo admiten parámetros por valor y siempre tienen un valor
+asociado (el resultado), pues están pensadas para ser utilizadas como parte de
+una expresión (igual que las funciones primitivas). Así, solo pueden devolver
+valores de tipos simples, como los que hemos utilizado hasta ahora.
+
