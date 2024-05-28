@@ -46,13 +46,13 @@ int main() {
                 printf("Introduzca el valor del radio > ");
                 scanf("%f", &radio);
                 area = area_circulo(radio);
-                printf("El área del círculo es --> %.2f\n", area);
+                printf(" El área del círculo es --> %.2f\n", area);
                 break;
             case 2:
                 printf("Introduzca el valor del lado > ");
                 scanf("%f", &lado);
                 area = area_cuadrado(lado);
-                printf("El área del cuadrado es --> %.2f\n", area);
+                printf(" El área del cuadrado es --> %.2f\n", area);
                 break;
             case 3:
                 printf("Introduzca el valor de la base > ");
@@ -60,7 +60,7 @@ int main() {
                 printf("Introduzca el valor de la altura > ");
                 scanf("%f", &alt);
                 area = area_rectangulo(base, alt);
-                printf("El área del rectángulo es --> %.2f\n", area);
+                printf(" El área del rectángulo es --> %.2f\n", area);
                 break;
             case 4:
                 printf("Introduzca el valor de la base > ");
@@ -68,7 +68,7 @@ int main() {
                 printf("Introduzca el valor de la altura > ");
                 scanf("%f", &alt);
                 area_triangulo(base, alt, &area);
-                printf("El área del triángulo es --> %.2f\n", area);
+                printf(" El área del triángulo es --> %.2f\n", area);
                 break;
             case 5:
                 printf("Introduzca el valor de la base 1 > ");
@@ -78,7 +78,7 @@ int main() {
                 printf("Introduzca el valor de la altura > ");
                 scanf("%f", &alt);
                 area = area_trapecio(b1, b2, alt);
-                printf("El área del trapecio es --> %.2f\n", area);
+                printf(" El área del trapecio es --> %.2f\n", area);
                 break;
             case 6:
                 printf("Gracias por utilizar nuestro programa\n");
