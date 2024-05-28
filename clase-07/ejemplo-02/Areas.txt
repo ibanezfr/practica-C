@@ -1,0 +1,88 @@
+// Diseñar una aplicación que ofrezca, a través de un menú, la posibilidad de
+// calcular áreas de figuras geométricas específicas. Se deben codificar
+// funciones que calculen las áreas de: círculo, cuadrado, rectángulo, triángulo
+// y trapecio. Las fórmulas pueden buscarse en libros de geometría de nivel
+// secundario (polimodal).
+
+PROGRAMA Areas
+FUNCION area_circulo (r:real):Real
+HACER
+   area_circulo := pontencia(r,2) * 3.1419265358979323846
+FIN HACER
+FIN FUNCION
+
+FUNCION area_cuadrado (l:real):Real
+HACER
+   area_cuadrado := l * l
+FIN HACER
+FIN FUNCION
+
+FUNCION area_rectangulo (b:real,a:real):Real
+HACER
+   area_rectangulo := b * a
+FIN HACER
+FIN FUNCION
+
+PROCEDIMIENTO area_triangulo (b:Real, a:Real, REF area:Real)
+HACER
+   area := (b * a) / 2
+FIN HACER
+FIN PROCEDIMIENTO
+
+FUNCION area_trapecio (b1:real,b2:real, a:real):Real
+HACER
+   area_trapecio := ((b1 + b2)*a)/2
+FIN HACER
+FIN FUNCION
+
+VARIABLES
+area,radio,lado,base,alt,b1,b2: Real
+Op: Entero
+HACER
+Op := 0
+REPETIR MIENTRAS (op <> 6)
+      Imprimir: "1-Circulo"
+      Imprimir: "2-Cuadrado"
+      Imprimir: "3-Rectangulo"
+      Imprimir: "4-Triangulo"
+      Imprimir: "5-Trapecio"
+      Imprimir: "6-Para salir"
+
+      Leer: op
+      CASO op:
+         1: Imprimir: "Introduzca el valor del Radio > "
+            Leer: radio
+            area := area_circulo(radio)
+            Imprimir: "El area del circulo es --> ", area
+         2: Imprimir: "Introduzca el valor del lado > "
+            Leer: lado
+            area := area_cuadrado(lado)
+            Imprimir: "El area del cuadrado es --> ", area
+         3: Imprimir: "Introduzca el valor de la base > "
+            Leer: alt
+            area := area_rectangulo(base,alt)
+            Imprimir: "El area del rectangulo es --> ", area
+         4: Imprimir: "Introduzca el valor de la base > "
+            Leer: base
+            Imprimir: "Introduzca el valor de la altura > "
+            Leer: alt
+            //area := area_triangulo(base,alt)
+            area_triangulo(base,alt)
+            Imprimir: "El area del triángulo es --> ", area
+         5: Imprimir: "Introduzca el valor de la base 1 > "
+            Leer: b1
+            Imprimir: "Introduzca el valor de la base 2 > "
+            Leer: b2
+            Imprimir: "Introduzca el valor de la altura > "
+            Leer: alt
+            area := area_trapecio(b1,b2,alt)
+            Imprimir: "El area del trapecio es --> ", area
+         6: Imprimir: "Gracias por utilizar nuestro programa"
+         en otro caso: Imprimir: "Opción inválida"
+      FIN CASO
+FIN HACER
+FIN PROGRAMA
+
+
+
+
